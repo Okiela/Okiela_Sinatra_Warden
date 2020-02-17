@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
 
   s.rdoc_options = ["--charset=UTF-8"]
-  
-  s.add_dependency 'sinatra', '~> 1.4.6'
-  s.add_dependency 'warden',  '~> 1.2.3'
-  
+
+  s.add_dependency 'sinatra', '~> 2.0.8.1'
+  s.add_dependency 'warden',  '~> 1.2.8'
+
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'yard', '>= 0.5.4'
   s.add_development_dependency 'rack-test', '~> 0.6.2'
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bcrypt-ruby'
   s.add_development_dependency 'haml'
   s.add_development_dependency 'rack-flash3', '~> 1.0.1'
-  
+
   s.files        = `git ls-files`.split("\n")
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
